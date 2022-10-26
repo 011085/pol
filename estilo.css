@@ -1,0 +1,146 @@
+body {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/058/254/non_2x/abstract-white-background-free-vector.jpg");
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+.contenedor {
+
+    display: grid;
+    margin: auto;
+    width:95%;
+    grid-template-columns: 70%;
+    grid-template-areas:
+
+        "header header"
+        "nav nav"
+        "contenido1 contenido2"
+        "contenido3 contenido3"
+        "contenido4 contenido4"
+        "footer footer";
+
+    gap: 0.1em;
+
+}
+
+
+header {
+
+    grid-area: header;
+    
+    background-color: rgb(57, 207, 207);
+    text-align: center;
+
+}
+
+.cabeza img {
+
+    height: auto;
+
+
+}
+
+
+nav {
+
+    grid-area: nav;
+    background-color: aquamarine;
+    text-align: center;
+
+
+
+}
+
+
+.menu ul,
+li,
+a {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+    align-items: center;
+
+
+}
+
+
+
+.contenido1 {
+
+
+    grid-area: contenido1;
+    padding: 5%;
+    background-color: bisque;
+    border: 2px solid white;
+
+}
+
+
+
+.contenido2 {
+
+    grid-area: contenido2;
+    border: 2px solid white;
+    padding: 5%;
+    background-color: bisque;
+}
+
+
+
+
+.contenido3 {
+
+    grid-area: contenido3;
+    padding: 5%;
+    border: 2px solid white;
+    background-color: bisque;
+}
+
+.contenido4 {
+
+    grid-area: contenido4;
+    border: 2px solid white;
+    padding: 5%;
+    background-color: rgba(255, 228, 196, 0.596);
+}
+
+
+footer {
+
+    grid-area: footer;
+    border: 1px solid black;
+    margin: 1px auto;
+    text-align: center;
+}
+
+
+
+@media (max-width:600px) {
+
+    .contenedor {
+
+        display: grid;
+        margin: auto;
+        width:95%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+    
+            "header"
+            "nav"
+            "contenido1" 
+            "contenido2"
+            "contenido3" 
+            "contenido4"
+            "footer";
+    
+        gap: 0.1em;
+    
+    }
+}
