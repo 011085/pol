@@ -10,12 +10,14 @@ body {
 
 
 
-.contenedor {
+.container-fluid {
 
     display: grid;
     margin: auto;
-    width:95%;
-    grid-template-columns: 70%;
+    width: 95%;
+    background-color: rgb(32, 19, 206);
+    color: bisque;
+    grid-template-columns: 60%;
     grid-template-areas:
 
         "header header"
@@ -33,18 +35,21 @@ body {
 header {
 
     grid-area: header;
-    
-    background-color: rgb(57, 207, 207);
+    margin: 2% auto 0 20px;
     text-align: center;
+    
+    
 
 }
 
-.cabeza img {
+.cabeza>img {
 
-    height: auto;
-
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 }
+
 
 
 nav {
@@ -52,10 +57,11 @@ nav {
     grid-area: nav;
     background-color: aquamarine;
     text-align: center;
-
+    
 
 
 }
+
 
 
 .menu ul,
@@ -64,11 +70,13 @@ a {
 
     display: flex;
     justify-content: space-between;
-    margin: 5px auto;
+    margin: 1px auto;
     align-items: center;
+    text-decoration: none;
 
 
 }
+
 
 
 
@@ -76,8 +84,8 @@ a {
 
 
     grid-area: contenido1;
-    padding: 5%;
-    background-color: bisque;
+    padding: 2%;
+    text-align: center;
     border: 2px solid white;
 
 }
@@ -87,9 +95,10 @@ a {
 .contenido2 {
 
     grid-area: contenido2;
+    text-align: center;
     border: 2px solid white;
-    padding: 5%;
-    background-color: bisque;
+    padding: 2%;
+
 }
 
 
@@ -98,17 +107,17 @@ a {
 .contenido3 {
 
     grid-area: contenido3;
-    padding: 5%;
+    padding: 2%;
     border: 2px solid white;
-    background-color: bisque;
+
 }
 
 .contenido4 {
 
     grid-area: contenido4;
     border: 2px solid white;
-    padding: 5%;
-    background-color: rgba(255, 228, 196, 0.596);
+    padding: 2%;
+
 }
 
 
@@ -124,23 +133,39 @@ footer {
 
 @media (max-width:600px) {
 
-    .contenedor {
+    .container-fluid {
 
         display: grid;
         margin: auto;
-        width:95%;
+        width: 95%;
         grid-template-columns: 100%;
         grid-template-areas:
-    
+
             "header"
             "nav"
-            "contenido1" 
+            "contenido1"
             "contenido2"
-            "contenido3" 
+            "contenido3"
             "contenido4"
             "footer";
-    
+
         gap: 0.1em;
-    
+
     }
+
+
+    .contenido1>iframe {
+
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .contenido2>iframe {
+
+        width: 50%;
+        margin: auto;
+
+    }
+
 }
