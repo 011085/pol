@@ -16,15 +16,16 @@ canvas {
 
 .slide {
 
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
+    
 
 }
 
 
 .slide img {
 
-    height: 65vh;
+    height: 55vh;
     border-radius: 30px;
     border: 2px solid white;
     padding: 2px;
@@ -47,6 +48,7 @@ canvas {
         "contenido1 contenido2"
         "contenido3 contenido3"
         "contenido4 contenido5"
+
         "footer footer";
 
     gap: 0.1em;
@@ -79,11 +81,16 @@ nav {
     grid-area: nav;
     width: 70%;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
     align-items: center;
-    
-    
+    background-image: url('merlito.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 120%;
+    border: 2px solid rgb(255, 255, 255);
+
+
 }
 
 
@@ -93,7 +100,7 @@ a {
 
     display: flex;
     justify-content: space-between;
-    padding: 1px; 
+    padding: 1px;
     margin: 0 auto;
     border-radius: 5px;
     align-items: center;
@@ -146,30 +153,33 @@ a {
     background-color: rgba(77, 77, 255, 0.514);
     padding: 1%;
     border: 2px solid white;
+   
 
 }
 
 .contenido4 {
 
     grid-area: contenido4;
-    border: 2px solid white;
-    margin: 20px auto;
-    padding: 1%;
-    margin-top: 20px;
-    background-color: rgba(77, 77, 255, 0.514);
+    margin: 0 auto;
+    padding: 2%;
+
 
 }
+
+
 
 .contenido5 {
 
     grid-area: contenido5;
-    border: 2px solid white;
-    margin: 20px auto;
-    padding: 1%;
-    margin-top: 20px;
-    background-color: rgba(77, 77, 255, 0.514);
+    margin: 0 auto;
+    padding: 2%;
+    border-radius: 10px;
+
+
 
 }
+
+
 
 
 footer {
@@ -198,6 +208,8 @@ footer {
             "contenido2"
             "contenido3"
             "contenido4"
+            "contenido5"
+            "contenido6"
             "footer";
 
         gap: 0.1em;
